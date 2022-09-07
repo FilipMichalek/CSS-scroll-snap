@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 .container {
   scroll-snap-type: y mandatory;
   height: 100vh;
@@ -14,22 +17,20 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always; }
 
 .box_01 {
-  background: green;
-  scroll-snap-align: start; }
+  background: green; }
 
 .box_02 {
-  background: red;
-  scroll-snap-align: start; }
+  background: red; }
 
 .box_03 {
-  background: blue;
-  scroll-snap-align: start; }
+  background: blue; }
 
 .box_04 {
-  background: yellow;
-  scroll-snap-align: start; }
+  background: yellow; }
 
 /*# sourceMappingURL=stylesheet.css.map */

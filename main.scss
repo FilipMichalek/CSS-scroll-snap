@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     scroll-snap-type: y mandatory;
     height: 100vh;
@@ -17,24 +21,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .box_01 {
     background: green;
-    scroll-snap-align: start;
 }
 
 .box_02 {
     background: red;
-    scroll-snap-align: start;
 }
 
 .box_03 {
     background: blue;
-    scroll-snap-align: start;
 }
 
 .box_04 {
     background: yellow;
-    scroll-snap-align: start;
 }
